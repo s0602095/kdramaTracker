@@ -1,10 +1,39 @@
-
 require('dotenv').config();
 
 const { MongoClient } = require('mongodb');
 
-// Verbindung zu MongoDB mit der Adresse aus .env
-const client = new MongoClient(process.env.MONGODB_URI);
+const client = new MongoClient(process.env.MONGODB_URI, {
+  family: 4
+});
 
-module.exports = client;
+let db;
+
+
+// Verbindung zur MongoDB herstellen
+async function connectDB() {
+
+  await client.connect();
+
+  // Datenbank "kdrama" auswählen
+  db = client.db('kdrama');
+
+  console.log('MongoDB verbunden');
+
+}
+
+
+// Aktuelle Datenbank zurückgeben
+function getDb() {
+
+  return db;
+
+}
+
+
+module.exports = {
+  connectDB,
+  getDb
+};
+
+
 
