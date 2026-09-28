@@ -127,15 +127,11 @@ Die Dramas werden in der Datenbank gespeichert und können über das Backend hin
 
 ---
 
----
-
 ## 🤖 Verwendete KI-Werkzeuge
 
 Für die Entwicklung des Projekts wurden KI-Werkzeuge unterstützend verwendet.
 
 * ChatGPT: Unterstützung bei Code-Erklärungen, Fehlersuche, Ideen für die Benutzeroberfläche und einzelnen Code-Anpassungen.
-
----
 
 ---
 ## 🎓 WebTech Projekt
