@@ -164,38 +164,34 @@
    TABLET 
    ========================= */ 
  
-@media (max-width: 800px) { 
- 
-  .add-drama { 
-    margin: 35px 25px; 
-    padding: 30px; 
-  } 
+@media (max-width: 800px) {
+  .add-drama {
+    margin: 0;
+    padding: 30px;
+  }
 } 
  
  
 /* ========================= 
    HANDY 
    ========================= */ 
- 
-@media (max-width: 500px) { 
- 
-  .add-drama { 
-    margin: 25px 15px; 
-    padding: 25px 20px; 
- 
-    border-radius: 16px; 
-  } 
- 
-  .add-drama h2 { 
-    font-size: 26px; 
-  } 
- 
-  .add-drama > p { 
-    font-size: 14px; 
-  } 
- 
-  .add-drama input, 
-  .add-drama select { 
-    font-size: 14px; 
-  } 
+@media (max-width: 500px) {
+  .add-drama {
+    margin: 0;
+    padding: 25px 20px;
+    border-radius: 0;
+  }
+
+  .add-drama h2 {
+    font-size: 26px;
+  }
+
+  .add-drama > p {
+    font-size: 14px;
+  }
+
+  .add-drama input,
+  .add-drama select {
+    font-size: 14px;
+  }
 }
