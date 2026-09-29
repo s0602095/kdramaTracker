@@ -4,6 +4,7 @@
 
     <!-- HEADER -->
     <div class="add-header">
+
       <div class="add-icon">🎬</div>
 
       <h2>Drama hinzufügen</h2>
@@ -11,6 +12,7 @@
       <p>
         Füge ein neues K-Drama zu deiner Sammlung hinzu.
       </p>
+
     </div>
 
 
@@ -33,9 +35,10 @@
 
 
     <!-- BEWERTUNG + FOLGEN -->
-    <div class="form-row">
+    <div class="row">
 
-      <div>
+      <div class="col-md-6">
+
         <label>⭐ Bewertung</label>
 
         <input
@@ -44,9 +47,12 @@
           max="10"
           placeholder="z. B. 9"
           [(ngModel)]="bewertung">
+
       </div>
 
-      <div>
+
+      <div class="col-md-6">
+
         <label>🔢 Folgen</label>
 
         <input
@@ -54,6 +60,7 @@
           min="1"
           placeholder="z. B. 16"
           [(ngModel)]="folgen">
+
       </div>
 
     </div>
@@ -84,11 +91,8 @@
 
     <div class="poster-upload">
 
-      <span>📷</span>
-
       <div>
-        <strong>Poster auswählen</strong>
-        <small>Bilddatei auswählen</small>
+
       </div>
 
       <input
@@ -111,6 +115,9 @@
   </div>
 
 </div>
+
+
+
 
 
 
